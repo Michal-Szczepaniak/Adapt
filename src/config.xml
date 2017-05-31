@@ -1,0 +1,15 @@
+<domain>
+	<intent name="WeatherIntent">
+		<keyword required="true" name="weather" type="normal">
+			<item>weather</item>
+		</keyword>
+		<keyword required="false" name="type" type="normal">
+			<item>snow</item>
+			<item>rain</item>
+			<item>wind</item>
+			<item>sleet</item>
+			<item>sun</item>
+		</keyword>
+		<keyword required="true" name="location" type="regex">in (?P&lt;Location&gt;.*)</keyword>
+	</intent>
+</domain>
